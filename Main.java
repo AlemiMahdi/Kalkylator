@@ -22,7 +22,7 @@ public class Main {
                 case 1:
                     double[] addition = talInmatning(inmatning);
                     if (addition != null) {
-                        String utskrift = String.format("Resultat blir %.3g + %.3g = %.3g",
+                        String utskrift = String.format("Resultat blir: %.3g + %.3g = %.3g",
                                 addition[0], addition[1], addition[0] + addition[1]);
                         Methods.visaResultatRutan(utskrift);
                     }
@@ -31,13 +31,19 @@ public class Main {
                 case 2:
                     double[] subtraktion = talInmatning(inmatning);
                     if (subtraktion != null) {
-                        String utskrift = String.format("Resultat blir %.3g - %.3g = %.3g",
+                        String utskrift = String.format("Resultat blir: %.3g - %.3g = %.3g",
                                 subtraktion[0], subtraktion[1], subtraktion[0] - subtraktion[1]);
                         Methods.visaResultatRutan(utskrift);
                     }
                     break;
 
                 case 3:
+                    double[] multiplikation = talInmatning(inmatning);
+                    if (multiplikation != null) {
+                        String utskrift = String.format("Resultat blir: %.3g * %.3g = %.3g",
+                                multiplikation[0], multiplikation[1], multiplikation[0] * multiplikation[1]);
+                        Methods.visaResultatRutan(utskrift);
+                    }
                     break;
 
                 case 4:
