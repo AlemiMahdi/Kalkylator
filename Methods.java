@@ -5,5 +5,7 @@ public class Methods {
         System.out.println(linge);
         System.out.println("| " + utskrift + " |");
         System.out.println(linge);
+        System.out.println();
+        System.out.println();
     }
 }
