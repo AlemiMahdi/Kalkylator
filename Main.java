@@ -75,13 +75,13 @@ public class Main {
         double forstaTalet, andraTalet;
 
         try {
-            System.out.println("Skriv första talet och tryck på Enter");
+            System.out.print("Skriv första talet och tryck på Enter: ");
             forstaTalet = talen.nextDouble();
-            System.out.println("SKriv andra talet och tryck på Enter");
+            System.out.print("SKriv andra talet och tryck på Enter: ");
             andraTalet = talen.nextDouble();
             return new double[] { forstaTalet, andraTalet };
         } catch (InputMismatchException e) {
-            System.out.println("Ogiltig inmatning - age ett tal mellan 1-5");
+            System.out.println("Ogiltig inmatning");
             talen.nextLine();
             return null;
         }
