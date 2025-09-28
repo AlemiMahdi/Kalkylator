@@ -47,6 +47,16 @@ public class Main {
                     break;
 
                 case 4:
+                    double[] division = talInmatning(inmatning);
+                    if (division != null) {
+                        if (division[1] == 0) {
+                            System.out.println("Fel - kan inte dividera med noll");
+                        } else {
+                            String utskrift = String.format("Resultat blir: %.3g / %.3g = %.3g",
+                                    division[0], division[1], division[0] / division[1]);
+                            Methods.visaResultatRutan(utskrift);
+                        }
+                    }
                     break;
 
                 case 0:
