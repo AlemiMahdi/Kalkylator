@@ -20,6 +20,13 @@ public class Main {
             }
             switch (val) {
                 case 1:
+                    double[] addition = talInmatning(inmatning);
+                    if (addition != null) {
+                        double resultat = addition[0] + addition[1];
+                        String utskrift = String.format("Resultat blir %.3g + %.3g = %.3g",
+                                addition[0], addition[1], resultat);
+                        Methods.visaResultatRutan(utskrift);
+                    }
                     break;
 
                 case 2:
